@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Game Cards</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery-slim.min.js"><\/script>')</script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="./js/classifier.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body>
+<script>
+    $(function () {
+        const sortable = $('#sortable');
+        sortable.sortable();
+        sortable.disableSelection();
+    });
+    window.onload = function () {
+        setTimeout(function () {
+            startClassifier();
+        }, 0);
+    };
+</script>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Game Cards</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">What?<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">How?</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Cards</a>
+                    <a class="dropdown-item" href="#">Tutorials</a>
+                    <a class="dropdown-item" href="#">Research</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#code">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#train">Train</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="code" class="tab-pane container active">
+                    <h3>Code</h3>
+                    <ul id="sortable">
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+                    </ul>
+                </div>
+                <div id="train" class="tab-pane container fade">
+                    <h3>Train</h3>
+                    <p>Training</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        </div>
+    </div>
+</main>
+
+<script src="lib/popper.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+</body>
+</html>

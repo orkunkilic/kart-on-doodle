@@ -1,0 +1,24 @@
+body {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#sortable li {
+    margin: 0 3px 3px 3px;
+    padding: 0.4em 0.4em 0.4em 1.5em;
+    height: 3rem;
+    font-size: 1.4em;
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
