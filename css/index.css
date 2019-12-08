@@ -4,21 +4,38 @@ body {
     padding-right: 1rem;
 }
 
-#sortable {
+ul#codeList {
     list-style-type: none;
-    margin: 0;
+    display: block;
     padding: 0;
-    width: 60%;
+    height: 6.5rem;
+    margin-bottom: 10px;
 }
 
-#sortable li {
-    margin: 0 3px 3px 3px;
-    padding: 0.4em 0.4em 0.4em 1.5em;
-    height: 3rem;
-    font-size: 1.4em;
+ ul#codeList > li{
+    float: left;
+    width: 6rem;
+    margin: 5px;
+    padding: 5px;
+    height: 6rem;
 }
 
-#sortable li span {
-    position: absolute;
-    margin-left: -1.3em;
+ul#gameList{
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    height: 6.5rem;
+    margin-bottom: 10px;
+}
+
+ul#gameList > li{
+    float: left;
+    width: 6rem;
+    margin: 5px;
+    padding: 5px;
+    height: 6rem;
+}
+
+.frame {
+    margin: 1rem;
 }
