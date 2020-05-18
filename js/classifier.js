@@ -1,80 +1,51 @@
-let net;
-let webcamElement;
-let trainedClasses = [];
-const classifier = knnClassifier.create();
-var selectedOperation;
+ // More API functions here:
+ // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
-async function setupWebcam() {
-    webcamElement = document.getElementById('webcam');
-    return new Promise((resolve, reject) => {
-        const navigatorAny = navigator;
-        navigator.getUserMedia = navigator.getUserMedia ||
-            navigatorAny.webkitGetUserMedia || navigatorAny.mozGetUserMedia ||
-            navigatorAny.msGetUserMedia;
-        if (navigator.getUserMedia) {
-            navigator.getUserMedia({video: true},
-                stream => {
-                    webcamElement.srcObject = stream;
-                    webcamElement.addEventListener('loadeddata', () => resolve(), false);
-                },
-                error => reject());
-        } else {
-            reject();
-        }
-    });
-}
+ // the link to your model provided by Teachable Machine export panel
+ const URL = "https://teachablemachine.withgoogle.com/models/jPLYI-Dlf/";
 
+ let model, webcam, labelContainer, maxPredictions;
 
-async function startClassifier() {
-    console.log('Loading mobilenet..');
+ // Load the image model and setup the webcam
+ async function startClassifier() {
+     const modelURL = URL + "model.json";
+     const metadataURL = URL + "metadata.json";
 
-    // Load the model.
-    net = await mobilenet.load();
-    //mynet = await tf.loadLayersModel('localstorage://mymodel');
-    console.log('Sucessfully loaded model');
+     // load the model and metadata
+     // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+     // or files from your local hard drive
+     // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+     model = await tmImage.load(modelURL, metadataURL);
+     maxPredictions = model.getTotalClasses();
 
-    await setupWebcam();
+     // Convenience function to setup a webcam
+     const flip = true; // whether to flip the webcam
+     webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
+     await webcam.setup(); // request access to the webcam
+     await webcam.play();
+     window.requestAnimationFrame(loop);
 
-    // Reads an image from the webcam and associates it with a specific class
-    // index.
-    const addExample = classId => {
-        // Get the intermediate activation of MobileNet 'conv_preds' and pass that
-        // to the KNN classifier.
-        const activation = net.infer(webcamElement, 'conv_preds');
-        // Pass the intermediate activation to the classifier.
-        classifier.addExample(activation, classId);
-    };
+     // append elements to the DOM
+     document.getElementById("webcam-container").appendChild(webcam.canvas);
+     labelContainer = document.getElementById("label-container");
+     for (let i = 0; i < maxPredictions; i++) { // and class labels
+         labelContainer.appendChild(document.createElement("div"));
+     }
+ }
 
-    // When clicking a button, add an example for that class.
-    document.getElementById('learn').addEventListener('click', () => {
-        let index = classes.indexOf(selectedOperation);
-        buttonColor[index] = (buttonColor[index] > 100) ? 100 : buttonColor[index] += 5;
-        $('#'+selectedOperation).css('background-color','hsl(145,' + buttonColor[index]  + '%, 50%)');
-        addExample(index);
-        if(trainedClasses.indexOf(selectedOperation) < 0){
-            trainedClasses.push(selectedOperation);
-        }
-    });
+ async function loop() {
+     webcam.update(); // update the webcam frame
+     await predict();
+     window.requestAnimationFrame(loop);
+ }
 
-    document.getElementById('label').addEventListener('click', () => getClassLabel());
-
-    window.addEventListener("beforeunload", function (e) {
-        model.save('localstorage://mymodel');
-    }, false);
-
-}
-
-async function getClassLabel() {
-    if (classifier.getNumClasses() > 0) {
-        // Get the activation from mobilenet from the webcam.
-        const activation = net.infer(webcamElement, 'conv_preds');
-        // Get the most likely class and confidences from the classifier module.
-        const result = await classifier.predictClass(activation);
-
-        appendBlockToCodingHolder(classes[result.classIndex],function(){
-            openBlockDetails(classes[result.classIndex]);
-        });
-    }
-
-    await tf.nextFrame();
-}
+ // run the webcam image through the image model
+ async function predict() {
+     // predict can take in an image, video or canvas html element
+     const prediction = await model.predict(webcam.canvas);
+     for (let i = 0; i < maxPredictions; i++) {
+         if (prediction[i].probability.toFixed(2) > 0.92) {
+             addNewCard(prediction[i].className);
+         }
+     }
+ }
