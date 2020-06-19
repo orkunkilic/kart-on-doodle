@@ -20,7 +20,7 @@ const sketch = p5 => {
         gameText = new GameText(p5, birdyFont);
         gameButton = new GameButton(p5, gameText, spriteImage);
         score = 0;
-        if (changeScoreOnRun){
+        if (changeScoreOnRun) {
             score = scoreAmount;
         }
         pipe.generateFirst();
@@ -31,12 +31,12 @@ const sketch = p5 => {
     const canvasClick = () => {
         if (p5.mouseButton === 'left') {
             if (gameOver === false)
-                if(addFlap){
+                if (addFlap) {
                     bird.gravity = 0.5;
                     bird.jump();
                 }
-            if (changeScoreOnClick){
-                score  += scoreAmount;
+            if (changeScoreOnClick) {
+                score += scoreAmount;
             }
             if (gameStart === false)
                 gameStart = true;
@@ -52,12 +52,12 @@ const sketch = p5 => {
 
     const canvasTouch = () => {
         if (gameOver === false)
-            if(addFlap){
+            if (addFlap) {
                 bird.gravity = 0.5;
                 bird.jump();
             }
-        if (changeScoreOnClick){
-            score  += scoreAmount;
+        if (changeScoreOnClick) {
+            score += scoreAmount;
         }
         if (gameStart === false)
             gameStart = true;
@@ -74,42 +74,41 @@ const sketch = p5 => {
         p5.image(background, 0, 0);
 
         if (gameStart && gameOver === false) {
-            if(addPipe){
+            if (addPipe) {
                 pipe.move();
                 pipe.draw();
             }
             bird.update();
             bird.draw();
 
-            if (addSpeed){
+            if (addSpeed) {
                 floor.update();
             }
             floor.draw();
 
-            if(addEndGamewithObstacle){
+            if (addEndGamewithObstacle) {
                 gameOver = pipe.checkCrash(bird);
             }
 
-            if (addEndGamewithGround){
+            if (addEndGamewithGround) {
                 gameOver = bird.isDead();
             }
 
-            if (changeScoreOnPass){
+            if (changeScoreOnPass) {
                 if (pipe.getScore(bird))
-                    score  += scoreAmount;
+                    score += scoreAmount;
             }
 
-            if (changeScoreOnHitO){
+            if (changeScoreOnHitO) {
                 if (pipe.checkCrash(bird))
-                    score  += scoreAmount;
+                    score += scoreAmount;
             }
 
-            if (changeScoreOnHitG){
+            if (changeScoreOnHitG) {
                 if (bird.isDead())
-                    score  += scoreAmount;
+                    score += scoreAmount;
             }
-        }
-        else {
+        } else {
             pipe.draw();
             bird.draw();
             floor.draw();
@@ -126,8 +125,7 @@ const sketch = p5 => {
             gameText.gameOverText(score);
 
             gameButton.resetButton();
-        }
-        else {
+        } else {
             gameText.scoreText(score);
         }
     };
@@ -135,7 +133,7 @@ const sketch = p5 => {
     p5.keyPressed = (e) => {
         if (e.key === ' ') {
             if (gameOver === false)
-                if(addFlap){
+                if (addFlap) {
                     bird.gravity = 0.5;
                     bird.jump();
                 }

@@ -106,12 +106,12 @@ function setGameScore(x) {
 }
 
 function initInterpreter() {
-    window.$.getJSON('./code.json', function (response) {
-        fuse = new Fuse(response, {
-            keys: ['title'],
-            shouldSort: true
-        });
-    });
+    const fuseOptions = {
+        keys: ['title'],
+        shouldSort: true,
+        includeScore: true
+    };
+    fuse = new Fuse(codeList, fuseOptions);
 }
 
 function addCodeInput(code_text) {
@@ -124,16 +124,22 @@ function addCodeInput(code_text) {
     code_sub = code_sub.toLowerCase();
     code_sub = code_sub.replace(/\s+/g, " ").trim();
     let result = fuse.search(code_sub.replace(/\s+/g, " ").trim().substring(0, (code_sub.indexOf(':') > 0) ? code_sub.indexOf(':') : code_sub.length));
-    let resultCode = result[0].code;
+    let resultCode = result[0].item.code;
     let inputs = [];
-    if (result[0].input === "numeric") {
+    if (result[0].item.input === "numeric") {
         inputs.push(code_sub.match(/\d+/g).map(Number));
         resultCode = resultCode.format(inputs);
-    } else if (result[0].input === "string") {
+    } else if (result[0].item.input === "string") {
         let index = code_sub.indexOf(":");
         resultCode = resultCode.format(code_sub.substring(index + 1, code_sub.length).trim());
     }
     eval(resultCode);
+}
+
+function runCodeFromTM(idList) {
+    for(let i = 0; i< idList.length; i++){
+        eval(idList[i].replace(/[0-9]/g, '') + "()");
+    }
 }
 
 function runP5Code() {

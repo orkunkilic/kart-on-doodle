@@ -49,27 +49,45 @@ ul#code-list>li {
 }
 
 .container {
+    height: 96vh;
+    max-height: 96vh;
+    justify-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.grid-container {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, 45%);
+    grid-template-columns: 40% 10% 50%;
+    grid-auto-rows: 70% 30%;
 }
 
 .grid-item {
-    justify-self: center;
+    border: 1px solid #999999;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .game-container {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     grid-row: 1 / 3;
 }
 
 .video-container {
     float: left;
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
 .code-container {
     grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.run-button-container {
+    cursor: pointer;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
