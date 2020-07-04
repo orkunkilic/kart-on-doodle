@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Quicksand:400,700&display=swap&subset=latin-ext');
+
+:root{
+    --background : #232946;
+    --card-bg: #f9bc60;
+    --buton-bg : #b8c1ec;
+    --font-color : #232946;
+    --headline : #fffffe;
+    --link : #49ba70;
+    --light : #fffffe;
+}
+
+.light {
+    color: var(--light);
+    line-height: 24px;
+}
+
+.light h1 {
+    color: var(--card-bg);
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.title{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--headline);
+    font-size: 40px;
+    line-height: 45px;
+    margin: 20px auto;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 25px 25px 25px;
+    margin: 10px auto;
+}
+
+ul#code-list {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    height: 6.5rem;
+    margin-bottom: 10px;
+}
+
+ul#code-list>li {
+    float: left;
+    width: 6rem;
+    margin: 5px;
+    padding: 5px;
+    height: 6rem;
+}
+
+.frame {
+    margin: 1rem;
+}
+
+.card {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 2px solid Black;
+    overflow: visible;
+    box-shadow: 5px 5px 2px #888888;
+    position: relative;
+}
+
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain
+}
+
+.close {
+    position: absolute;
+    background: red;
+    color: white;
+    top: -10px;
+    right: -10px;
+}
+
+.container {
+    height: 96vh;
+    max-height: 96vh;
+    justify-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 10% 50%;
+    grid-auto-rows: 60% 25% 15%;
+}
+
+.grid-item {
+    border: 1px solid #999999;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.game-container {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.video-container {
+    float: left;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.code-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.level-container {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.run-button-container {
+    cursor: pointer;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
