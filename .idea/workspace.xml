@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flappy/code.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flappy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flappy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flappy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/flappy/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flappy/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/flappy/interpreter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/document.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +53,9 @@
       <workItem from="1575738450196" duration="28000" />
       <workItem from="1575738482538" duration="12478000" />
       <workItem from="1576865606529" duration="154000" />
-      <workItem from="1592572377989" duration="8563000" />
+      <workItem from="1592572377989" duration="9394000" />
+      <workItem from="1592898017870" duration="1918000" />
+      <workItem from="1593249234312" duration="575000" />
     </task>
     <servers />
   </component>
