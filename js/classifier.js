@@ -2,12 +2,12 @@
  // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
  // the link to your model provided by Teachable Machine export panel
- const URL = "https://teachablemachine.withgoogle.com/models/jPLYI-Dlf/";
 
- let model, webcam, labelContainer, maxPredictions;
+ let model, webcam, labelContainer, maxPredictions, URL;
 
  // Load the image model and setup the webcam
  async function startClassifier() {
+     const URL = getURLParameter();
      const modelURL = URL + "model.json";
      const metadataURL = URL + "metadata.json";
 
