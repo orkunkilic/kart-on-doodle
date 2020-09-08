@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/editor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/assets/FlappyBirdy.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/assets/FlappyBirdy.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/assets/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/assets/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/assets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/assets/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/assets/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/game/bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/game/bird.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/game/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/game/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/game/floor.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/game/floor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/game/gameButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/game/gameButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/game/gameText.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/game/gameText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/game/pipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/game/pipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/interpreter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +77,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\js" />
     </key>
@@ -86,18 +103,22 @@
       <workItem from="1592572377989" duration="9394000" />
       <workItem from="1592898017870" duration="1918000" />
       <workItem from="1593249234312" duration="575000" />
+      <workItem from="1599468318770" duration="13900000" />
+      <workItem from="1599569803880" duration="2106000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

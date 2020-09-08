@@ -19,12 +19,6 @@
     color: var(--card-bg);
 }
 
-body {
-    background-color: var(--background);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
 .title{
     font-family: 'Quicksand', sans-serif;
     color: var(--headline);
@@ -77,8 +71,7 @@ ul#code-list>li {
 
 .close {
     position: absolute;
-    background: red;
-    color: white;
+    color: gray;
     top: -10px;
     right: -10px;
 }

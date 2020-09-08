@@ -1,0 +1,140 @@
+body {
+  background-color: #ffffff;
+  color: #999999;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /*justify-items: center;*/
+  align-items: center;
+  justify-content: center; /*space-evenly;*/
+}
+/*.flex-section {
+  flex-grow: 1;
+  justify-items: center;
+  align-items: center;
+}*/
+#train-model-button {
+  width: 200px;
+  --background-color: #1A73E8;
+  --color: #ffffff;
+}
+#train-model-button:hover {
+  --color: #1A73E8;
+}
+
+#intro {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+
+#intro h1 {
+  margin-bottom: 0px;
+}
+
+#intro p {
+  margin-top: 3px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+#images.flex-section {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  max-width: 100%;
+  /*width: 640px;*/
+  height: 420px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#intro-image {
+  max-width: 100%;
+  width: 600px;
+}
+
+#buttons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+/*
+#images img {
+  width: 850px;
+  height: auto;
+}*/
+
+#prediction-section {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.ready #prediction-section {
+  display: flex;
+}
+
+#inference-camera-container {
+  width: 270px;
+  height: 270px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-right: 28px;
+}
+
+.prediction-image {
+  width: 406px;
+  height: 270px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-left: 28px;
+}
+
+.ready #intro-image {
+  display: none;
+}
+
+@media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 812px)
+  and (orientation : portrait) {
+    #inference-camera-container {
+      wiidth: 135px;
+      height: 135px;
+      display: none;
+    }
+    #prediction-image {
+      width: calc(100vw - 32px);
+      height: 135px;
+    }
+                      
+}
+
+/*tm-croppable-webcam {
+    width: 270px;
+    height: 270px;
+    position: fixed;
+    left: 50%;
+    top: calc(100vh - 230px);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}*/

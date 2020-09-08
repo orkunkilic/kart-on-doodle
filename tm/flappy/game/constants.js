@@ -1,4 +1,4 @@
-const CANVAS_WIDTH = document.getElementById("game-container").clientWidth;
+const CANVAS_WIDTH = (document.getElementById("game-container").clientWidth < 479) ? 480 : document.getElementById("game-container").clientWidth;
 const CANVAS_HEIGHT = 650;
 const MIN_PIPE_GAP = CANVAS_HEIGHT / 5;
 const MAX_PIPE_GAP = CANVAS_HEIGHT / 4;

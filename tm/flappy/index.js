@@ -1,7 +1,7 @@
 const sketch = p5 => {
-    let background = p5.loadImage('./assets/background.png');
-    let spriteImage = p5.loadImage('./assets/sprite.png');
-    let birdyFont = p5.loadFont('./assets/FlappyBirdy.ttf');
+    let background = p5.loadImage('./flappy/assets/background.png');
+    let spriteImage = p5.loadImage('./flappy/assets/sprite.png');
+    let birdyFont = p5.loadFont('./flappy/assets/FlappyBirdy.ttf');
     let gameStart;
     let gameOver;
     let bird;
