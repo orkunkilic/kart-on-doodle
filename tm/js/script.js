@@ -9,65 +9,65 @@ const wizard = new tm.Wizard({
     },
     classes: [
         {
-            name: "When Clicked",
+            name: "9",
             title: "Record examples for 'When Clicked' event",
             description:
                 "'When Clicked' event allows us to define operations when the player clicks on the screen. Hold the button and take at least 10 pictures."
         },
         {
-            name: "When Hit to Ground",
+            name: "3",
             title: "Record examples to train model for 'When Hit to Ground' event",
             description:
                 "After 'When Hit to Ground' event, you can define what will happen in the game after player hits to ground. Hold the button and take at least 10 pictures."
-        }/*,
+        },
         {
-            name: "When the Game Starts",
+            name: "10",
             title: "Record examples to train model for 'When the Game Starts' event",
             description:
                 "'When the Game Starts' event allows us to define operations when the player starts the game. Hold the button and take at least 10 pictures."
         },
         {
-            name: "When Pass the Obstacle",
+            name: "2",
             title: "Record examples to train model for 'When Pass the Obstacle' event",
             description:
                 "'When Pass the Obstacle' event runs when the player passes each obstacle. Hold the button and take at least 10 pictures."
         },
         {
-            name: "When Hit the Obstacle",
+            name: "4",
             title: "Record examples to train model for 'When Hit the Obstacle' event",
             description:
                 "'When Hit the Obstacle' event runs when the player hits each obstacle. Hold the button and take at least 10 pictures."
         },
         {
-            name: "Flap",
+            name: "5",
             title: "Record examples to train model for 'Flap' command",
             description:
                 "Flap command jumps the bird. Hold the button and take at least 10 pictures."
         },
         {
-            name: "Change Speed",
+            name: "8",
             title: "Record examples to train model for 'Change Speed' command.",
             description:
                 "'Change Speed' command changes the speed of the bird. Hold the button and take at least 10 pictures.."
         },
         {
-            name: "Place Obstacles",
+            name: "1",
             title: "Record examples to train model for this command.",
             description:
                 "'Place Obstacles' command places obstacles on the game canvas. Hold the button and take at least 10 pictures."
         },
         {
-            name: "Change the Score",
+            name: "6",
             title: "Record examples to train model for this command.",
             description:
                 "'Change the Score' command increases or decreases the score. Hold the button and take at least 10 pictures."
         },
         {
-            name: "End the Game",
+            name: "7",
             title: "Record examples to train model for this command.",
             description:
                 "'End the Game' command ends the game. Hold the button and take at least 10 pictures."
-        }*/
+        }
     ],
     onLoad: () => {
         console.log("model has loaded");

@@ -19,7 +19,7 @@ function addNewCard(id) {
         $("#code-list").append(
             "<li id='" + funcNames[id] + cnt + "'>\n" +
             "<div class='card' style='width: 5rem;'>\n" +
-            "<button class='close' onclick='remove(" + cnt + ")'>X</button>\n" +
+            "<button class='close' onclick='remove(" + '"' + funcNames[id] + cnt + '"' + ")'>X</button>\n" +
             "<img src='../data/flappy/func_" + id + ".png' class='card-img' alt='...'>\n" +
             "</div>\n" +
             "</li>\n"
@@ -30,7 +30,7 @@ function addNewCard(id) {
 }
 
 function remove(id) {
-    $("#" + id).empty();
+    $("li#" + id).remove();
 }
 
 function runCards() {
