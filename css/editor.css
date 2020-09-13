@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Quicksand:400,700&display=swap&subset=latin-ext');
 
-:root{
-    --background : #232946;
+:root {
+    --background: #232946;
     --card-bg: #f9bc60;
-    --buton-bg : #b8c1ec;
-    --font-color : #232946;
-    --headline : #fffffe;
-    --link : #49ba70;
-    --light : #fffffe;
+    --buton-bg: #b8c1ec;
+    --font-color: #232946;
+    --headline: #fffffe;
+    --link: #49ba70;
+    --light: #fffffe;
 }
 
 .light {
@@ -19,18 +19,12 @@
     color: var(--card-bg);
 }
 
-.title{
+.title {
     font-family: 'Quicksand', sans-serif;
     color: var(--headline);
     font-size: 40px;
     line-height: 45px;
     margin: 20px auto;
-}
-
-.container {
-    max-width: 960px;
-    padding: 0 25px 25px 25px;
-    margin: 10px auto;
 }
 
 ul#code-list {
@@ -41,7 +35,7 @@ ul#code-list {
     margin-bottom: 10px;
 }
 
-ul#code-list>li {
+ul#code-list > li {
     float: left;
     width: 6rem;
     margin: 5px;
@@ -76,52 +70,53 @@ ul#code-list>li {
     right: -10px;
 }
 
-.container {
-    height: 96vh;
-    max-height: 96vh;
-    justify-items: center;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 .grid-container {
-    height: 100%;
+    width: 80vw;
     display: grid;
-    grid-template-columns: 40% 10% 50%;
-    grid-auto-rows: 60% 25% 15%;
+    grid-template-columns: 400px 80px 480px;
+    grid-auto-rows: 480px 200px 120px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .grid-item {
-    border: 1px solid #999999;
     object-fit: contain;
     display: block;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .game-container {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
+    align-self: center;
 }
 
 .video-container {
     float: left;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    align-self: start;
+    justify-self: start;
 }
 
 .code-container {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    align-self: start;
+    height: 200px;
+    border: 1px solid #999999;
+    overflow-y: auto;
 }
 
 .level-container {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+    align-self: start;
+    justify-self: start;
 }
 
 .run-button-container {
     cursor: pointer;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-self: center;
 }

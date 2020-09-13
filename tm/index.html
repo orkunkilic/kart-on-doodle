@@ -70,9 +70,13 @@
             <div class="grid-item run-button-container" id="run-button-container">
                 <img src="../img/run.png" alt="run button" style="width: 80%; height: auto">
             </div>
-            <div class="grid-item game-container" id="game-container"></div>
-            <div class="grid-item level-container" id="level-container"></div>
+            <div class="grid-item game-container" id="game-container">
+            </div>
+            <div class="grid-item level-container" id="level-container">
+                Level 1: Find two cards to make the bird flap when the player clicks on the screen
+            </div>
         </div>
+        <a id="train-model-button" href="#">... use your own cards with AI</a>
     </div>
     <script src="flappy/game/constants.js"></script>
     <script src="flappy/game/bird.js"></script>
@@ -101,10 +105,6 @@
             clicked = !clicked;
         });
     </script>
-    <div id="buttons" class="flex-section">
-        <tm-button id="train-model-button" label="Train Model"></tm-button>
-    </div>
-    <a id="model-load" href="#">... already have a trained model?</a>
 </main>
 </body>
 </html>
