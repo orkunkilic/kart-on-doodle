@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   color: #999999;
   font-family: 'Poppins', Helvetica, sans-serif;
   text-align: center;

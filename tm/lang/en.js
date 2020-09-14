@@ -1,9 +1,10 @@
 const _levels = [
-    "Level 1: Every game needs some player input. In this game, players click on the screen to make the bird jump. Code this behaviour",
-    "Level 2: What is the challenge of your game? When will the game end? Let's code what happens when the bird hits to ground",
-    "Level 3: Now, we have already coded some basic functions of the game. Now, add some pipes as obstacles and set the bird's speed",
-    "Level 4: If you pass the obstacle, increase the score",
-    "Level 5: If you cannot pass the obstacle end the game"
+    "Level 1: <a href='javascript:showNextLevelExplanation(0)'>⏭️Next ⏭️</a><br> Every game needs some player input. In this game, players click on the screen to make the bird jump. Code this behaviour",
+    "Level 2: <a href='javascript:showNextLevelExplanation(1)'>⏭️Next ⏭️</a> <br> What is the challenge of your game? When will the game end? Let's code what happens when the bird hits to ground",
+    "Level 3: <a href='javascript:showNextLevelExplanation(2)'>⏭️Next ⏭️</a> <br> Now, we have already coded some basic functions of the game. Now, add some pipes as obstacles and set the bird's speed",
+    "Level 4: <a href='javascript:showNextLevelExplanation(3)'>⏭️Next ⏭️</a> <br> If you pass the obstacle, increase the score",
+    "Level 5: <a href='javascript:showNextLevelExplanation(4)'>⏭️Next ⏭️</a> <br> If you cannot pass the obstacle end the game",
+    "Congratulations! You completed all the activities."
 ];
 
 const _training_classes = [

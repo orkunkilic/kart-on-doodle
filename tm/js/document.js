@@ -40,3 +40,9 @@ function runCards() {
     }).get();
     runCodeFromTM(idList);
 }
+
+function showNextLevelExplanation(level) {
+    if (level < _levels.length){
+        $("#level-container").html(_levels[level + 1]);
+    }
+}

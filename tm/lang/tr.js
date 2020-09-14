@@ -1,9 +1,10 @@
 const _levels = [
-    "1. Bölüm: Her oyun, oyuncusundan bir girdi bekler. Bu oyundaki tek girdi, oyuncunun ekrana tıklaması olacak. Fare ile her tıklandığında, kuş kanat çırpacak.",
-    "2. Bölüm: Peki, oyunun zorluğu nerede? Oyun ne zaman sona erecek? Mesela, yere çarptığında oyunun bitişi kodlayabiliriz",
-    "3. Bölüm: Artık, oyunumuzda biraz aksiyon görmeye başladık. Şimdi oyun başladığında ortaya çıkacak çubukları belirleyip, kuşumuzun hızını ayarlayalım.",
-    "4. Bölüm: Eğer kuşumuz engelleri aşarsa, toplam puanlarını artıralım.",
-    "5. Bölüm: Eğer kuşumuz engelleri aşamazsa, puanı sıfırlayalım ve oyunu bitirelim"
+    "1. Bölüm: <a href='javascript:showNextLevelExplanation(0)'>⏭️Sonraki Görev ⏭️</a> <br> Her oyun, oyuncusundan bir girdi bekler. Bu oyundaki tek girdi, oyuncunun ekrana tıklaması olacak. Fare ile her tıklandığında, kuş kanat çırpacak.",
+    "2. Bölüm: <a href='javascript:showNextLevelExplanation(1)'>⏭️Sonraki Görev ⏭️</a>  <br> Peki, oyunun zorluğu nerede? Oyun ne zaman sona erecek? Mesela, yere çarptığında oyunun bitişi kodlayabiliriz",
+    "3. Bölüm: <a href='javascript:showNextLevelExplanation(2)'>⏭️Sonraki Görev ⏭️</a>  <br> Artık, oyunumuzda biraz aksiyon görmeye başladık. Şimdi oyun başladığında ortaya çıkacak çubukları belirleyip, kuşumuzun hızını ayarlayalım.",
+    "4. Bölüm: <a href='javascript:showNextLevelExplanation(3)'>⏭️Sonraki Görev ⏭️</a>  <br> Eğer kuşumuz engelleri aşarsa, toplam puanlarını artıralım.",
+    "5. Bölüm: <a href='javascript:showNextLevelExplanation(4)'>⏭️Sonraki Görev ⏭️</a>  <br> Eğer kuşumuz engelleri aşamazsa, puanı sıfırlayalım ve oyunu bitirelim",
+    "Tebrikler! Tüm aktiviteleri tamamladın."
 ];
 
 

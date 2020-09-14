@@ -108,10 +108,17 @@ ul#code-list > li {
 }
 
 .level-container {
+    color: whitesmoke;
+    width: 100%;
     grid-column: 1 / 4;
+    border-radius: 4px;
+    margin-top: 10px;
     grid-row: 3 / 4;
     align-self: start;
     justify-self: start;
+    text-align: start;
+    padding: 15px;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
 .run-button-container {
