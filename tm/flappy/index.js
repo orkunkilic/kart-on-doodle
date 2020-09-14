@@ -88,6 +88,7 @@ const sketch = p5 => {
 
             if (addEndGamewithObstacle) {
                 gameOver = pipe.checkCrash(bird);
+                console.log("something");
             }
 
             if (addEndGamewithGround) {

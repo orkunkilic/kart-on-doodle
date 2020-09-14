@@ -5,16 +5,6 @@ const codeList = [
     input: "none"
   },
   {
-    title: "yere çarpınca",
-    code: "whenHitToGround()",
-    input: "none"
-  },
-  {
-    title: "engele çarpınca",
-    code: "whenHitToObstacle()",
-    input: "none"
-  },
-  {
     title: "oyun başlayınca",
     code: "whenRun()",
     input: "none"
@@ -25,13 +15,18 @@ const codeList = [
     input: "none"
   },
   {
-    title: "kanat çırp",
-    code: "flap()",
+    title: "engele çarpınca",
+    code: "whenHitToObstacle()",
     input: "none"
   },
   {
-    title: "oyunu bitir",
-    code: "endGame()",
+    title: "yere çarpınca",
+    code: "whenHitToGround()",
+    input: "none"
+  },
+  {
+    title: "kanat çırp",
+    code: "flap()",
     input: "none"
   },
   {
@@ -47,6 +42,11 @@ const codeList = [
   {
     title: "engel yerleştir",
     code: "setObstacles()",
+    input: "none"
+  },
+  {
+    title: "oyunu bitir",
+    code: "endGame()",
     input: "none"
   }
 ];
