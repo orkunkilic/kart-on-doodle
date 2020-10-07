@@ -21,12 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/codelab/tr/img/6dd860f44778e342.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/tm/codelab/tr/img/6dd860f44778e342.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tm/codelab/tr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tm/codelab/tr/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tm/js/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/lang/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/tm/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../marti" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -98,7 +95,9 @@
       <workItem from="1599468318770" duration="13900000" />
       <workItem from="1599569803880" duration="17958000" />
       <workItem from="1599893998732" duration="9286000" />
-      <workItem from="1600075254516" duration="12426000" />
+      <workItem from="1600075254516" duration="12490000" />
+      <workItem from="1600186183127" duration="604000" />
+      <workItem from="1602064095829" duration="4854000" />
     </task>
     <servers />
   </component>
@@ -127,9 +126,9 @@
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
     <state x="736" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/93.0.1827.1080@93.0.1827.1080" timestamp="1599732495238" />
-    <state x="786" y="283" key="FileChooserDialogImpl" timestamp="1600082538402">
+    <state x="786" y="283" key="FileChooserDialogImpl" timestamp="1600188077891">
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
-    <state x="786" y="283" key="FileChooserDialogImpl/93.0.1827.1080@93.0.1827.1080" timestamp="1600082538402" />
+    <state x="786" y="283" key="FileChooserDialogImpl/93.0.1827.1080@93.0.1827.1080" timestamp="1600188077891" />
   </component>
 </project>
