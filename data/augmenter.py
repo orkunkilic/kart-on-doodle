@@ -16,7 +16,7 @@ if os.path.exists(data_dir):
 os.makedirs(data_dir)
 
 image_list = []
-for filename in glob.glob('flappy/*.png'):  # assuming gif
+for filename in sorted(glob.glob('./flappy/*.png')):
     im = Image.open(filename)
     image_list.append(im)
 

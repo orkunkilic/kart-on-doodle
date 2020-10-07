@@ -3,32 +3,31 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="js/utils.js"></script>
+    <script src="tm/js/utils.js"></script>
     <meta charset="utf-8"/>
 </head>
 
 <body>
 <div class="container">
-    <p class="title">Kart-ON Kodlama Oyunları</p>
+    <h1 class="title">KART-ON KODLAMA OYUNLARI</h1>
     <p class="light">Kart-ON Oyunları bilgi-işlemsel düşünme yeteneğini geliştirmek için çizim kartları kullanarak kodlama yapabilmenizi sağlar. Her oyunu, kendi kartları ile kodlayabilirsiniz. Eğer kendi kartlarınızı oluşturabilmek istiyorsanız, Teachable Machine ile kart hazırlama kılavuzumuzu inceleyebilirsiniz.</p>
-    <div>
-        <input id="tmin" type="text" placeholder="https://teachablemachine.withgoogle.com/models/xxxxx-xxx/" style="display:table-cell; width:70%">
-        <button id="tmin_load" style="display:table-cell; width:25%">Load</button>
+    <div class="box">
+        <div class="box-inner">
+            <p class="light">Teachable Machine'den kopyaladığın linki veya eğittiğin model numarasını buraya kopyalayıp, istediğin oyunu başlat.</p>
+            <input id="tmin" type="text" placeholder="xxxxx-xxx/ veya https://teachablemachine.withgoogle.com/models/xxxx-xxx/">
+        </div>
     </div>
     <div class="grid">
-        <div class="card item">
+        <div id="runFlappy" class="card item">
             <img src="img/flappy.png">
-            <p>Flappy Bird oyununu kodlayın!</p>
-            <p><a href="flappy/index.html" onclick="location.href=this.href+'?key='+modalURL; return false;">Editörde Aç</a></p>
+            <p>Flappy Bird oyununu kodlamak için editörü aç!</p>
         </div>
     </div>
 </div>
 <script>
-    var modalURL = '';
-    document.getElementById("tmin_load").addEventListener('click', function () {
-        modalURL = document.getElementById("tmin").value;
+    document.getElementById("runFlappy").addEventListener('click', function () {
+        location.href= './tm/index.html?key=' + document.getElementById("tmin").value;
     });
-
 </script>
 </body>
 
