@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tm/codelab/tr/img/flappy-commands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tm/codelab/tr/img/tm-screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tm/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/codelab/tr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tm/codelab/tr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/flappy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/flappy/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/flappy/interpreter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,17 +65,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
+      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm\en" />
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm\js" />
-      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -94,8 +102,10 @@
       <workItem from="1599893998732" duration="9286000" />
       <workItem from="1600075254516" duration="12490000" />
       <workItem from="1600186183127" duration="604000" />
-      <workItem from="1602064095829" duration="5509000" />
-      <workItem from="1603879588890" duration="129000" />
+      <workItem from="1602064095829" duration="4854000" />
+      <workItem from="1602149225548" duration="1499000" />
+      <workItem from="1602180590487" duration="1123000" />
+      <workItem from="1604312092207" duration="507000" />
     </task>
     <servers />
   </component>
@@ -128,5 +138,9 @@
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
     <state x="786" y="283" key="FileChooserDialogImpl/93.0.1827.1080@93.0.1827.1080" timestamp="1600188077891" />
+    <state x="507" y="183" key="SettingsEditor" timestamp="1604312131667">
+      <screen x="93" y="0" width="1827" height="1080" />
+    </state>
+    <state x="507" y="183" key="SettingsEditor/93.0.1827.1080@93.0.1827.1080" timestamp="1604312131667" />
   </component>
 </project>

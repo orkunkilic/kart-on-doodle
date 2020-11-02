@@ -9,7 +9,7 @@ function getURLParameter() {
             return tm_link + loc_key;
     } else {
         //return tm_link + 'jPLYI-Dlf/';
-        return "https://teachablemachine.withgoogle.com/models/bSWNuNwZa/";
+        return tm_link + "bSWNuNwZa/";
     }
 }
 

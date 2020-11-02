@@ -28,14 +28,12 @@ function whenClick() {
 function whenHitToGround() {
     isClicked = false;
     hitToGround = true;
-    hitToObstacle = false;
     passObstacle = false;
     isRunning = false;
 }
 
 function whenHitToObstacle() {
     isClicked = false;
-    hitToGround = false;
     hitToObstacle = true;
     passObstacle = false;
     isRunning = false;
@@ -58,15 +56,15 @@ function whenRun() {
 }
 
 function flap() {
-    if (isClicked){
+    if (isClicked) {
         addFlap = true;
-    }else{
+    } else {
         console.log("It might be better to use it under other cards.");
     }
 }
 
 function endGame() {
-    if (hitToGround){
+    if (hitToGround) {
         addEndGamewithGround = true;
     } else if (hitToObstacle) {
         addEndGamewithObstacle = true;
@@ -80,27 +78,33 @@ function setObstacles() {
 }
 
 function setPipeSpeed(s) {
-    if(s > 5){
+    if (typeof s === 'undefined') {
+        s = 4;
+    }
+    if (s > 5) {
         s = 8;
     }
     PipeSpeed = s;
 }
 
 function setGameScore(x) {
+    if (typeof x === 'undefined') {
+        x = 1;
+    }
     scoreAmount = x;
-    if (isClicked){
+    if (isClicked) {
         changeScoreOnClick = true;
     }
-    if (hitToGround){
+    if (hitToGround) {
         changeScoreOnHitG = true;
     }
-    if (hitToObstacle){
+    if (hitToObstacle) {
         changeScoreOnHitO = true;
     }
-    if (passObstacle){
+    if (passObstacle) {
         changeScoreOnPass = true;
     }
-    if (isRunning){
+    if (isRunning) {
         changeScoreOnRun = true;
     }
 }
@@ -137,7 +141,7 @@ function addCodeInput(code_text) {
 }
 
 function runCodeFromTM(idList) {
-    for(let i = 0; i< idList.length; i++){
+    for (let i = 0; i < idList.length; i++) {
         eval(idList[i].replace(/[0-9]/g, '') + "()");
     }
 }

@@ -1,0 +1,11 @@
+whenRun();
+setPipeSpeed();
+setObstacles();
+whenClick();
+flap();
+whenPassObstacle();
+setGameScore();
+whenHitToObstacle();
+endGame();
+whenHitToGround();
+endGame();

@@ -30,9 +30,12 @@
     <google-codelab-step label="Teachable Machine ile Flappy Bird Oyunu Kodlayalım" duration="0">
 
 
-        <p>Teachable Machine ve Kart-ON Oyun ile programlamanın temellerini öğrenebileceğimiz ve hayatımızdaki yapay zeka örneklerini keşfedeceğimiz bir yolculuğa çıkıyoruz. Kart-ON Oyun&#39;un temel programlama blokları ile sıkça oynadığımız oyunların temelinde yatan mantık yapısını kodlayabiliriz. Teachable Machine ile de bu oyunları kodlarken yapay zeka algoritmalarından yararlanabiliriz. </p>
+        <p><a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> ve <a href="https://asabuncuoglu13.github.io/karton-games/" target="_blank">Kart-ON Oyun</a> ile programlamanın temellerini öğrenebileceğimiz ve hayatımızdaki yapay zeka örneklerini keşfedeceğimiz bir yolculuğa çıkıyoruz. Kart-ON Oyun&#39;un temel programlama blokları ile sıkça oynadığımız oyunların temelinde yatan mantık yapısını kodlayabiliriz. Teachable Machine ile de bu oyunları kodlarken yapay zeka algoritmalarından yararlanabiliriz. </p>
         <p>Bu örnekte, Kart-ON ile &#34;<a href="https://tr.wikipedia.org/wiki/Flappy_Bird" target="_blank">Flappy Bird</a>&#34; Oyununu Kodlayacağız. Oyun için biz bazı ön hazırlıklar yaptık ve size üstüne düşüneceğiniz bazı görevler bıraktık. Bu görevler için on tane programlama bloğunu size bırakıyoruz. Bu komutları kullanarak beş adet görevi tamamlayacaksınız.</p>
-        <p class="image-container"><img style="width: 697.37px" src="img\6dd860f44778e342.jpeg"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/flappy-commands.png"></p>
+        <p>Yukarıdaki şekilde sıralanan komutları önce fiziksel olarak tasarlayıp, sonra birer programlama bloğu olarak kullanarak beş adet görevi tamamlayacaksınız. Mesela, benim kendi uygulamam için tasarladığım bazı kartlar aşağıdaki gibi şekillendi.</p>
+        <p class="image-container"><img style="width: 697.37px" src="./img/6dd860f44778e342.jpeg"></p>
+        <p>Haydi, bu programlama bloklarını, oyun hamuru, LEGO, kağıt, kalem veya farklı fiziksel materyallerler ile fizikselleştir.</p>
 
 
     </google-codelab-step>
@@ -41,7 +44,7 @@
 
         <p>Teachable Machine yapay zekanın yaygın kullanım alanlarından nesne ve ses tanıma teknolojilerini kendi uygulamalarımızda hızlıca kullanabilmemizi sağlayan bir web uygulamasıdır. </p>
         <p>Kart-ON Oyun&#39;un programlama kartlarını kendi tasarlamak isteyenler için, Teachable Machine&#39;den çıkan sonuçları hızlıca entegre edilebilir hale getirdik.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\c68041dc3721cecc.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/c68041dc3721cecc.png"></p>
         <h2 is-upgraded>Yeni Bir Proje Açalım</h2>
         <p><a href="https://teachablemachine.withgoogle.com/train" target="_blank">
             <paper-button class="colored" raised>Get Started</paper-button>
@@ -52,7 +55,7 @@
             <li><strong>Audio Project:</strong> Mikrofon ile kaydettiğimiz sesleri bilgisayarımızın ayırt edebilmesini,</li>
             <li><strong>Pose Project: </strong>Hareketler sergilediğimiz videolardaki akışın tanınmasını sağlayacak eğitim arayüzlerini başlatacaktır.</li>
         </ol>
-        <p class="image-container"><img style="width: 624.00px" src="img\3068682cff233896.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/3068682cff233896.png"></p>
         <p>Biz &#34;Flappy Bird&#34; oyununda hazırlayacağınız kartların bilgisayar tarafından tanınabilmesini istiyoruz. Yani aslında bu kartlar bilgisayar için birer &#34;resim tanıma&#34; problemi olacak. Bilgisayara bu problemi çözdürebilmek için Image Project seçeneğini seçerek devam ediyoruz.</p>
 
 
@@ -61,14 +64,14 @@
     <google-codelab-step label="Programlama Kartlarını Tanıtma" duration="0">
 
         <p>Yeni bir proje başlattığınızda yapay zeka problemlerinin temel akışını bize gösteren bir ekran ile karşılaşırız. Şu anki yaygın kullanımda olan yapay zeka uygulamaları, çözmek istediği problemi anlamlandırmak için fazla sayıda veri toplar. Örneğin elma ile armutu ayırabilen bir sistem eğitmek istiyoruz. Bu sistemi oluşturmak için öncelikle birçok elma ve armut resmi bulmalıyız. Böylece bunları sisteme besleyerek, sistemin ikinci aşamaya geçmesini sağlayabiliriz. </p>
-        <p class="image-container"><img style="width: 624.00px" src="img\b24b007584cbbe17.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/b24b007584cbbe17.png"></p>
         <p>İkinci aşamaya geçmeden önce, programlama kartlarımızı tanıtmak için &#34;Webcam&#34; i açıyoruz. İlk olarak &#34;Ekrana Dokununca&#34; komutunu tanıtmak için, bu komut için bir çizim hazırlıyorum. Siz de bir çizim yapabileceğiniz gibi, çevrenizdeki herhangi bir nesneyi, programlama komutu olarak kullanabilirsiniz!</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\cdff043ef9d77a24.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/cdff043ef9d77a24.png"></p>
         <p>Eğer bu komut için hangi görüntüyü kullanacağınızı seçtiyseniz, Hold To Record butonuna bastığınız süre boyunca bu görüntüyü yakından, uzaktan ve hafif farklı açılardan çeşitli fotoğraflarını kaydetmeye başlayabilirsiniz. Ben yaklaşık 40 tane fotoğraf kullanarak, yapay zeka modülümü eğitmek istiyorum. Bunun için 40 adet farklı görünümlerden fotoğrafı çekene kadar basılı tutabilirsiniz. Veya, aşağıdaki fotoğrafta gördüğünüz gibi, önce &#34;Çark&#34; şeklindeki ikona basarak, fotoğraf çekme ayarlarını değiştirip, çekme işlemini otomatik hale getirebiliriz.</p>
         <p>FPS, saniyede kaç adet fotoğraf çekileceğini, Delay, çekme işleminin kaç saniye sonra otomatik olarak başlayacağını, Duration ayarı ise kaç saniye boyunca fotoğraf çekmeye devam edeceğini belirtir. Aşağıdaki ekranda verilen ayarlar ile bilgisayarınızın işlem kapasitesine göre yaklaşık 40 fotoğraf çekebilir bir sistem ayarı gerçekleştirmiş oluyoruz.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\57a65190d9de4b98.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/57a65190d9de4b98.png"></p>
         <p>&#34;Save Settings&#34;e basıp, ayarlarımızı kaydettikten sonra, bu ayarlar ile çekime başlayalım.</p>
-        <p class="image-container"><img style="width: 450.00px" src="img\883a038918c013d9.gif"></p>
+        <p class="image-container"><img style="width: 450.00px" src="./img/883a038918c013d9.gif"></p>
 
 
     </google-codelab-step>
@@ -145,7 +148,7 @@
             </tr>
         </table>
         <p>Tabloda gördüğün programlama komutları için bir sınıf numarası belirledik. Bu sınıf numarasını her bir eğitim kartının başlığı olarak değiştirirsen, artık Kart-ON Oyun - Flappy Bird uygulaması senin tasarladığın kartların kendi sisteminde hangi komuta karşılık geldiğini anlayabilir.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\d0d8739e2d5c3957.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/d0d8739e2d5c3957.png"></p>
         <p>Yukarıdaki şekilde olduğu gibi &#34;Ekrana Dokununca&#34; sınıfımın ismini, tabloda karşılık gelen &#34;1&#34; olarak değiştiriyorum.</p>
 
 
@@ -154,11 +157,11 @@
     <google-codelab-step label="Yapay Zeka Modelinin Eğitilmesi" duration="0">
 
         <p>İlk üç programlama komutu sınıfınızı oluşturduktan sonra, modelinizi eğitim sonuçlarınıza göz atmak daha fazla ilerlemeden yararlı olacaktır. Bu eğitimi başlatmak için &#34;Training&#34; kutusundaki butona basalım.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\fa2cb54f403587fb.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/fa2cb54f403587fb.png"></p>
         <p>Eğitim işlemi bittikten sonra açılan &#34;Preview&#34; kutusunda modelimizin başarısını test edebiliriz. Her bir programlama kartını kameraya gösterip, &#34;Output&#34; alanında oluşan başarı çubuklarının oranını değerlendirelim. Eğer çubuklar çoğu zaman %90&#39;dan daha yüksek değerleri gösteriyorsa, sistem kartları iyi tanıyabiliyor demektir. Eğer sistemimizin kafası fazla karışık ise, programlama kartlarını daha iyi ışık ortamlarında, farklı açılardan çekmeye devam edelim.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\eb45bce11b1db15.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/eb45bce11b1db15.png"></p>
         <p>Benim gösterdiğim örneklerde model neredeyse %100 oranla gösterdiğim kartları tanıyabiliyordu. Ama aşağıdaki örnekte olduğu gibi farklı veya boş bir kart gördüğünde model kararsızlık yaşıyor. Fark edeceğiniz üzere, yapay zeka bizim verdiğimiz bilgiler dışında bir bilgiye erişimi olmadığı için bizim kurduğumuz bu üç sınıflık dünyada kendine göre seçimler yapmaya çalışır. Ama bunun başka bir kart olduğunu bize söyleyemez.</p>
-        <p class="image-container"><img style="width: 249.09px" src="img\b75f9edba230d8a6.png"><img style="width: 248.64px" src="img\672cc8ae66a37dd3.png"></p>
+        <p class="image-container"><img style="width: 249.09px" src="./img/b75f9edba230d8a6.png"><img style="width: 248.64px" src="./img/672cc8ae66a37dd3.png"></p>
 
 
     </google-codelab-step>
@@ -166,17 +169,18 @@
     <google-codelab-step label="Modeli Oyunda Kullanma" duration="0">
 
         <p>Tüm programlama kartlarımızı oluşturup, başarı oranlarını deneyip, modelimizi tamamladıktan sonra, bu modelimizi oyunda nasıl kullanacağız? Preview kartının üst kısmında bulunan &#34;Export Model&#34; butonuna basarak, &#34;Sharable Link&#34;&#39;imizi yani paylaşılabilir bağlantımızı alabiliriz. Aşağıdaki gibi açılan penceredeki &#34;Upload my model&#34; butonuna tıklayarak, modelimizin bağlantısını oluşturalım.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\5ea54ade7667ecbb.png"></p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/5ea54ade7667ecbb.png"></p>
         <p>Bağlantı oluşturma işlemi tamamlandığında &#34;Your Shareable Link&#34; altında beliren linki kopyalayabilirsin.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img\274197b936e46f49.png"></p>
-
+        <p class="image-container"><img style="width: 624.00px" src="./img/274197b936e46f49.png"></p>
+        <p>Kopyaladığınız bu linki, (1) <a href="https://asabuncuoglu13.github.io/karton-games/" target="_blank">Kart-ON Oyun açılış sayfası</a>ndaki kutucuğa kopyalayıp, (2) Flappy Bird oyun kutusuna tıklayarak, Flappy Bird oyununu kodlamak için kullanabilirsiniz.</p>
+        <p class="image-container"><img style="width: 624.00px" src="./img/tm-screen.png"></p>
 
     </google-codelab-step>
 
     <google-codelab-step label="Projeyi Google Drive&#39;a Kaydetme" duration="0">
 
-        <p>Projeyi kaydetmek için &#34;Teachable Machine&#34; başlığının yanındaki üç çizgili menü ikonuna tıklayıp, &#34;Save Project to Drive&#34; seçeneği ile Google Hesabınız aracılığı ile Google Drive&#39;a modelinizi kaydedebilirsiniz.</p>
-        <p class="image-container"><img style="width: 343.00px" src="img\f46d2de7f4d9b2ad.png"></p>
+        <p>Eğer Teachable Machine projesini kaydetmek, ve sonrasında geliştirme yapmak isterseniz, &#34;Teachable Machine&#34; başlığının yanındaki üç çizgili menü ikonuna tıklayıp, &#34;Save Project to Drive&#34; seçeneği ile Google Hesabınız aracılığı ile Google Drive&#39;a modelinizi kaydedebilirsiniz.</p>
+        <p class="image-container"><img style="width: 343.00px" src="./img/f46d2de7f4d9b2ad.png"></p>
         <p>Projeyi kaydettikten sonra, Google hesabınız ile bağlanarak, istediğiniz zaman projeyi tekrar açabilirsiniz.</p>
 
 
