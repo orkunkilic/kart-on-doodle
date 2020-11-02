@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm/codelab/tr/img/6dd860f44778e342.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/tm/codelab/tr/img/6dd860f44778e342.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm/codelab/tr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tm/codelab/tr/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tm/js/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/document.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,8 @@
       <workItem from="1599893998732" duration="9286000" />
       <workItem from="1600075254516" duration="12490000" />
       <workItem from="1600186183127" duration="604000" />
-      <workItem from="1602064095829" duration="4854000" />
+      <workItem from="1602064095829" duration="5509000" />
+      <workItem from="1603879588890" duration="129000" />
     </task>
     <servers />
   </component>
