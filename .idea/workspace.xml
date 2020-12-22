@@ -20,6 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tm/codelab/tr/img/flappy-commands.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tm/codelab/tr/img/tm-screen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tm/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,17 +60,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
+      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm\en" />
       <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm\js" />
-      <recent name="C:\Users\asabuncuoglu13\Desktop\education-repo\karton-games\tm" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -103,19 +106,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="785" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600082463408">
@@ -130,5 +134,9 @@
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
     <state x="786" y="283" key="FileChooserDialogImpl/93.0.1827.1080@93.0.1827.1080" timestamp="1600188077891" />
+    <state x="507" y="183" key="SettingsEditor" timestamp="1604312131667">
+      <screen x="93" y="0" width="1827" height="1080" />
+    </state>
+    <state x="507" y="183" key="SettingsEditor/93.0.1827.1080@93.0.1827.1080" timestamp="1604312131667" />
   </component>
 </project>
