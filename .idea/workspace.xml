@@ -20,8 +20,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/flappy/1/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/1/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/1/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/10/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/10/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/10/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/2/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/2/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/2/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/3/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/3/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/3/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/4/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/4/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/4/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/5/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/5/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/5/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/6/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/6/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/6/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/7/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/7/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/7/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/8/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/8/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/8/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/9/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/9/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/9/3.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/cards.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/augmenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/augmenter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/1/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/10/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/2/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/3/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/4/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/5/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/6/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/7/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/8/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/9/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tm/js/classifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/classifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/js/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +165,9 @@
       <workItem from="1605811561376" duration="667000" />
       <workItem from="1607092901570" duration="1834000" />
       <workItem from="1607814457859" duration="36000" />
+      <workItem from="1610055490475" duration="673000" />
+      <workItem from="1610274521022" duration="527000" />
+      <workItem from="1610981544531" duration="893000" />
     </task>
     <servers />
   </component>

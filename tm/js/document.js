@@ -21,7 +21,7 @@ function addNewCard(id) {
             "<li id='" + funcNames[id] + cnt + "'>\n" +
             "<div class='card' style='width: 5rem;'>\n" +
             "<button class='close' onclick='remove(" + '"' + funcNames[id] + cnt + '"' + ")'>X</button>\n" +
-            "<img src='../data/flappy-modern/func_" + id + ".png' class='card-img' alt='...'>\n" +
+            "<img src='../data/flappy/" + id + "/0.png' class='card-img' alt='...'>\n" +
             "</div>\n" +
             "</li>\n"
         )
