@@ -1,9 +1,4 @@
- // More API functions here:
- // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-
- // the link to your model provided by Teachable Machine export panel
-
- let model, webcam, labelContainer, maxPredictions, URL;
+let model, webcam, labelContainer, maxPredictions, URL;
 
  // Load the image model and setup the webcam
  async function startClassifier() {
@@ -44,7 +39,7 @@
      // predict can take in an image, video or canvas html element
      const prediction = await model.predict(webcam.canvas);
      for (let i = 0; i < maxPredictions; i++) {
-         if (prediction[i].probability.toFixed(2) > 0.92) {
+         if (prediction[i].probability.toFixed(2) > 0.85) {
              addNewCard(prediction[i].className);
          }
      }

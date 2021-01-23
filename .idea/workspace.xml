@@ -20,15 +20,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e75a37b-64ee-4fa4-99d1-517ce763b741" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tm/codelab/tr/img/flappy-commands.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tm/codelab/tr/img/tm-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tm/js/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/1/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/1/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/1/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/10/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/10/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/10/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/2/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/2/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/2/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/3/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/3/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/3/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/4/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/4/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/4/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/5/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/5/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/5/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/6/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/6/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/6/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/7/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/7/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/7/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/8/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/8/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/8/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/9/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/9/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flappy/9/3.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/art/cards.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/augmenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/augmenter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/1/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/10/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/2/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/3/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/4/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/5/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/6/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/7/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/8/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy-modern/func_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/flappy/9/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/flappy/func_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/js/classifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/classifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/js/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tm/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/tm/js/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,6 +96,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1dXXO5PAo2cdmsvhRuIqgNeQGSa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,7 +109,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../marti" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../data-flow" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,7 +119,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,9 +158,16 @@
       <workItem from="1600186183127" duration="604000" />
       <workItem from="1602064095829" duration="4854000" />
       <workItem from="1602149225548" duration="1499000" />
-      <workItem from="1602180590487" duration="1435000" />
-      <workItem from="1602533331825" duration="236000" />
-      <workItem from="1602570043717" duration="221000" />
+      <workItem from="1602180590487" duration="1123000" />
+      <workItem from="1604312092207" duration="2469000" />
+      <workItem from="1605536013020" duration="182000" />
+      <workItem from="1605536217758" duration="3268000" />
+      <workItem from="1605811561376" duration="667000" />
+      <workItem from="1607092901570" duration="1834000" />
+      <workItem from="1607814457859" duration="36000" />
+      <workItem from="1610055490475" duration="673000" />
+      <workItem from="1610274521022" duration="527000" />
+      <workItem from="1610981544531" duration="893000" />
     </task>
     <servers />
   </component>
@@ -130,13 +196,13 @@
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
     <state x="736" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/93.0.1827.1080@93.0.1827.1080" timestamp="1599732495238" />
-    <state x="786" y="283" key="FileChooserDialogImpl" timestamp="1600188077891">
+    <state x="786" y="283" key="FileChooserDialogImpl" timestamp="1607814492124">
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
-    <state x="786" y="283" key="FileChooserDialogImpl/93.0.1827.1080@93.0.1827.1080" timestamp="1600188077891" />
-    <state x="507" y="183" key="SettingsEditor" timestamp="1604312131667">
+    <state x="786" y="283" key="FileChooserDialogImpl/93.0.1827.1080@93.0.1827.1080" timestamp="1607814492124" />
+    <state x="481" y="101" key="SettingsEditor" timestamp="1605536171647">
       <screen x="93" y="0" width="1827" height="1080" />
     </state>
-    <state x="507" y="183" key="SettingsEditor/93.0.1827.1080@93.0.1827.1080" timestamp="1604312131667" />
+    <state x="481" y="101" key="SettingsEditor/93.0.1827.1080@93.0.1827.1080" timestamp="1605536171647" />
   </component>
 </project>
