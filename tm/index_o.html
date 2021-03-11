@@ -71,20 +71,21 @@
                 <img src="../img/run.png" alt="run button" style="width: 80%; height: auto">
             </div>
             <div class="grid-item game-container" id="game-container">
-                <div class="grid">
-
-                </div>
             </div>
             <div class="grid-item level-container" id="level-container">
             </div>
         </div>
         <a id="train-model-button" href="#"></a>
     </div>
-    <script src="doodle/game/gameButton.js"></script>
-    <script src="doodle/game/gameText.js"></script>
-    <script src="doodle/index.js"></script>
-    <script src="doodle/interpreter.js"></script>
-    <script src="doodle/code.js"></script>
+    <script src="flappy/game/constants.js"></script>
+    <script src="flappy/game/bird.js"></script>
+    <script src="flappy/game/floor.js"></script>
+    <script src="flappy/game/gameButton.js"></script>
+    <script src="flappy/game/gameText.js"></script>
+    <script src="flappy/game/pipe.js"></script>
+    <script src="flappy/index.js"></script>
+    <script src="flappy/interpreter.js"></script>
+    <script src="flappy/code.js"></script>
     <script>
         let clicked = true;
         String.prototype.format = function () {
@@ -93,11 +94,8 @@
                 return args[+(a.substr(1, a.length - 2)) || 0];
             });
         };
-         runGame()
-         $('.grid').click(()=>{
-             whenCreatePlatforms()
-             whenRun()
-         })
+        initInterpreter();
+        runP5Code();
         $("#run-button-container").click(function () {
             runCards();
         });

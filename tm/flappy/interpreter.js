@@ -137,10 +137,12 @@ function addCodeInput(code_text) {
         let index = code_sub.indexOf(":");
         resultCode = resultCode.format(code_sub.substring(index + 1, code_sub.length).trim());
     }
+    console.log(resultCode)
     eval(resultCode);
 }
 
 function runCodeFromTM(idList) {
+    console.log(idList)
     for (let i = 0; i < idList.length; i++) {
         eval(idList[i].replace(/[0-9]/g, '') + "()");
     }

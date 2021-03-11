@@ -11,6 +11,7 @@ body {
   display: none;
 }
 
+
 #container {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,31 @@ body {
   align-items: center;
   justify-content: center; /*space-evenly;*/
 }
+
+.grid{
+  width: 400px;
+  height: 600px;
+  background-image: url('./doodle/assets/background.png');
+  position: relative;
+  font-size: 200px;
+  text-align: center;
+}
+
+
+.doodler{
+  width:87px;
+  height: 85px;
+  background-image: url('./doodle/assets/doodler-guy.png');
+  position: absolute;
+}
+
+.platform{
+  width:85px;
+  height: 15px;
+  background-image: url('./doodle/assets/platform.png');
+  position: absolute;
+}
+
 /*.flex-section {
   flex-grow: 1;
   justify-items: center;

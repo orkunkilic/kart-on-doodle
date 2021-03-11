@@ -1,16 +1,14 @@
 let code = [];
 let funcNames = [
     "empty",
-    "whenClick",
+    "whenLeftClick",
+    "whenRightClick",
+    "whenUpClick",
     "whenRun",
-    "whenPassObstacle",
-    "whenHitToObstacle",
     "whenHitToGround",
-    "flap",
-    "setGameScore",
-    "setPipeSpeed",
-    "setObstacles",
-    "endGame"];
+    "whenCreatePlatforms",
+    "endGame"
+    ];
 
 let prev = "";
 let cnt = 0;
