@@ -41,54 +41,62 @@ const sketch = p5 => {
         }
     }
 
-    function createPlatforms() {
-        for (let i = 0; i < platformCount; i++) {
-            let platformGap = 600 / platformCount
-            let newPlatBottom = 100 + i * platformGap
-            let newPlatform = new Platform(newPlatBottom)
-            platforms.push(newPlatform)
+    function createGamePlatforms() {
+        if (addPlatform) {
+            for (let i = 0; i < platformCount; i++) {
+                let platformGap = 600 / platformCount
+                let newPlatBottom = 100 + i * platformGap
+                let newPlatform = new Platform(newPlatBottom)
+                platforms.push(newPlatform)
+            }
         }
     }
 
-    function movePlatforms() {
-        if (doodlerBottomSpace > 100) {
-            platforms.forEach(platform => {
-                platform.bottom -= 2
-                let visual = platform.visual
-                visual.style.bottom = platform.bottom + 'px'
+    function moveGamePlatforms() {
+        if (addMovePlatforms) {
+            if (doodlerBottomSpace > 100) {
+                platforms.forEach(platform => {
+                    platform.bottom -= 2
+                    let visual = platform.visual
+                    visual.style.bottom = platform.bottom + 'px'
 
-                if (platform.bottom < 10) {
-                    let firstPlatform = platforms[0].visual
-                    firstPlatform.classList.remove('platform')
-                    platforms.shift()
-                    if (isFirstJump) {
-                        score++
+                    if (platform.bottom < 10) {
+                        let firstPlatform = platforms[0].visual
+                        firstPlatform.classList.remove('platform')
+                        platforms.shift()
+                        if (isFirstJump) {
+                            score++
+
+                        }
+                        let newPlatform = new Platform(600)
+                        platforms.push(newPlatform)
 
                     }
-                    let newPlatform = new Platform(600)
-                    platforms.push(newPlatform)
-
-                }
-            })
+                })
+            }
         }
+
     }
 
-    function jump() {
-        clearInterval(downTimerId)
-        isJumping = true
-        upTimerId = setInterval(function () {
-            doodlerBottomSpace += 15
-            doodler.style.bottom = doodlerBottomSpace + 'px'
-            console.log(doodlerBottomSpace)
-            if (doodlerBottomSpace > startPoint + 200) {
-                fall()
-                isJumping = false
-            }
-            if (doodlerBottomSpace > 580) {
-                fall()
-                isJumping = false
-            }
-        }, 30)
+    function jumpDoodle() {
+        if (addJump) {
+            clearInterval(downTimerId)
+            isJumping = true
+            upTimerId = setInterval(function () {
+                doodlerBottomSpace += 15
+                doodler.style.bottom = doodlerBottomSpace + 'px'
+                console.log(doodlerBottomSpace)
+                if (doodlerBottomSpace > startPoint + 200) {
+                    fall()
+                    isJumping = false
+                }
+                if (doodlerBottomSpace > 580) {
+                    fall()
+                    isJumping = false
+                }
+            }, 30)
+        }
+
     }
 
     function fall() {
@@ -107,7 +115,7 @@ const sketch = p5 => {
                     doodlerLeftSpace <= platform.left + 85 &&
                     !isJumping) {
                     startPoint = doodlerBottomSpace
-                    jump()
+                    jumpDoodle()
                     isJumping = true
                 }
             })
@@ -115,18 +123,20 @@ const sketch = p5 => {
     }
 
     function gameOver() {
-        isGameOver = true
+        if (hitToGround) {
+            isGameOver = true
 
-        while (grid.firstChild) {
-            grid.removeChild(grid.firstChild);
+            while (grid.firstChild) {
+                grid.removeChild(grid.firstChild);
+            }
+
+            grid.innerHTML = score
+
+            clearInterval(upTimerId)
+            clearInterval(downTimerId)
+            clearInterval(leftTimerId)
+            clearInterval(rightTimerId)
         }
-
-        grid.innerHTML = score
-
-        clearInterval(upTimerId)
-        clearInterval(downTimerId)
-        clearInterval(leftTimerId)
-        clearInterval(rightTimerId)
     }
 
     function moveLeft() {
@@ -181,7 +191,7 @@ const sketch = p5 => {
     p5.draw = () => {
         if (!isGameOver) {
             if (addPlatform) {
-                createPlatforms()
+                createGamePlatforms()
                 addPlatform = false
             }
             if (addEndGamewithGround) {
@@ -191,7 +201,7 @@ const sketch = p5 => {
                 gameOver()
             }
             if (isRunning) {
-                movePlatforms()
+                moveGamePlatforms()
             }
         }
 
@@ -202,19 +212,29 @@ const sketch = p5 => {
             if (e.key === ' ') {
                 if (isRunning && !isFirstJump) {
                     isFirstJump = true
-                    jump();
+                    jumpDoodle();
                 }
             }
 
             doodler.style.bottom = doodlerBottomSpace + 'px'
-
             if (e.key === 'ArrowLeft') {
-                moveLeft()
-            } else if (e.key === 'ArrowRight') {
-                moveRight()
-            } else if (e.key === 'ArrowUp') {
-                moveStraight()
+                if (leftClicked) {
+                    moveLeft()
+                } else console.log("Use another card")
             }
+
+            if (e.key === 'ArrowRight') {
+                if (rightClicked) {
+                    moveRight()
+                } else console.log("Use another card")
+            }
+
+            if (e.key === 'ArrowUp') {
+                if (upClicked) {
+                    moveStraight()
+                } else console.log("Use another card")
+            }
+
         }
     }
 

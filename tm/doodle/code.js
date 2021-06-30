@@ -5,8 +5,18 @@ const codeList = [
     input: "none"
   },
   {
+    title: "sola git",
+    code: "goLeft()",
+    input: "none"
+  },
+  {
     title: "sağa dokununca",
     code: "whenRightClick()",
+    input: "none"
+  },
+  {
+    title: "sağa git",
+    code: "goRight()",
     input: "none"
   },
   {
@@ -15,8 +25,28 @@ const codeList = [
     input: "none"
   },
   {
+    title: "düz git",
+    code: "goStraight()",
+    input: "none"
+  },
+  {
     title: "oyun başlayınca",
     code: "whenRun()",
+    input: "none"
+  },
+  {
+    title: "platform ak",
+    code: "movePlatforms()",
+    input: "none"
+  },
+  {
+    title: "platforma değince",
+    code: "whenHitToPlatform()",
+    input: "none"
+  },
+  {
+    title: "zıpla",
+    code: "jump()",
     input: "none"
   },
   {
@@ -25,13 +55,13 @@ const codeList = [
     input: "none"
   },
   {
-    title: "engel yerleştir",
-    code: "whenCreatePlatforms()",
+    title: "oyunu bitir",
+    code: "endGame()",
     input: "none"
   },
   {
-    title: "oyunu bitir",
-    code: "endGame()",
+    title: "platform yerleştir",
+    code: "setPlatforms()",
     input: "none"
   }
 ];
