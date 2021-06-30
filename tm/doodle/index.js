@@ -18,16 +18,15 @@ const sketch = p5 => {
     let rightTimerId
     let score = 0
 
-function createDoodler() {
+    function createDoodler() {
         grid.appendChild(doodler)
         doodler.classList.add('doodler')
         doodlerLeftSpace = doodlerLeftSpace
         doodler.style.left = doodlerLeftSpace + 'px'
-        console.log(doodler)
         doodler.style.bottom = doodlerBottomSpace + 'px'
     }
-    
-    class Platform{
+
+    class Platform {
         constructor(newPlatBottom) {
             this.bottom = newPlatBottom
             this.left = Math.random() * 315
@@ -43,7 +42,7 @@ function createDoodler() {
     }
 
     function createPlatforms() {
-        for (let i = 0; i < platformCount; i++){
+        for (let i = 0; i < platformCount; i++) {
             let platformGap = 600 / platformCount
             let newPlatBottom = 100 + i * platformGap
             let newPlatform = new Platform(newPlatBottom)
@@ -87,7 +86,7 @@ function createDoodler() {
             }
             if (doodlerBottomSpace > 580) {
                 fall()
-                isJumping=false
+                isJumping = false
             }
         }, 30)
     }
@@ -110,7 +109,7 @@ function createDoodler() {
                     startPoint = doodlerBottomSpace
                     jump()
                     isJumping = true
-                    }
+                }
             })
         }, 20)
     }
@@ -141,7 +140,7 @@ function createDoodler() {
                 doodlerLeftSpace -= 2
                 doodler.style.left = doodlerLeftSpace + 'px'
             } else moveRight()
-        },10)
+        }, 10)
     }
 
     function moveRight() {
@@ -155,14 +154,14 @@ function createDoodler() {
                 doodlerLeftSpace += 2
                 doodler.style.left = doodlerLeftSpace + 'px'
             } else moveLeft()
-        },10)
+        }, 10)
     }
 
     function moveStraight() {
-        isGoingLeft = false
-        isGoingRight = false
         clearInterval(leftTimerId)
         clearInterval(rightTimerId)
+        isGoingLeft = false
+        isGoingRight = false
     }
 
 
@@ -186,37 +185,38 @@ function createDoodler() {
                 addPlatform = false
             }
             if (addEndGamewithGround) {
-                isGameOver = true;                
+                isGameOver = true;
             }
             if (isGameOver) {
                 gameOver()
             }
             if (isRunning) {
                 movePlatforms()
-            }   
+            }
         }
-   
+
     }
 
     p5.keyPressed = (e) => {
         if (isRunning && !isGameOver) {
-        if (e.key === ' ') {
-            if (isRunning && !isFirstJump) {
-                isFirstJump=true
-                jump();
+            if (e.key === ' ') {
+                if (isRunning && !isFirstJump) {
+                    isFirstJump = true
+                    jump();
+                }
             }
-         }
 
-        doodler.style.bottom = doodlerBottomSpace + 'px'
-        if(e.key === 'ArrowLeft') {
-        moveLeft()
-        } else if (e.key === 'ArrowRight') {
-        moveRight()
-        } else if (e.key === 'ArrowUp') {
-        moveStraight()
+            doodler.style.bottom = doodlerBottomSpace + 'px'
+
+            if (e.key === 'ArrowLeft') {
+                moveLeft()
+            } else if (e.key === 'ArrowRight') {
+                moveRight()
+            } else if (e.key === 'ArrowUp') {
+                moveStraight()
+            }
         }
-        }  
     }
 
 
-}    
+}

@@ -49,7 +49,7 @@ function whenRun() {
 function endGame() {
     if (hitToGround) {
         addEndGamewithGround = true;
-    }else {
+    } else {
         console.log("It might be better to use it under other cards.");
     }
 }
@@ -61,9 +61,8 @@ function whenCreatePlatforms() {
 
 
 function runCodeFromTM(idList) {
-    console.log(idList)
     for (let i = 0; i < idList.length; i++) {
-        
+
         eval(idList[i].replace(/[0-9]/g, '') + "()");
     }
 }
